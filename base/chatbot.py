@@ -26,7 +26,7 @@ def get_answer_for_question(question: str, knowledge_base: dict) -> str | None:
         
         
 def get_answer(user_input:str) -> str:
-    knowledge_base:dict = load_knowledge_base('../knowledge_base.json')
+    knowledge_base:dict = load_knowledge_base('/static/knowledge_base.json')
     
     best_match:str = find_best_match(user_input,[q["question"] for q in knowledge_base["questions"]])
     if best_match:
