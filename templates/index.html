@@ -6,6 +6,11 @@
     <title>py-Chatbot</title>
 </head>
 <body>
-    
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="input" id="" placeholder="Type here...">
+        <button type="submit">Send</button>
+
+    </form>
 </body>
 </html>
